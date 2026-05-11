@@ -1,7 +1,7 @@
 // Minimal storefront. Talks to tarout-shop-api. The API base URL comes from
 // the VITE_API_URL env var at build time (see .env.example); falls back to
 // localhost:3000 for `npm run dev`.
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3000";
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
 
 const fmt = (cents) =>
 	new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" }).format(
